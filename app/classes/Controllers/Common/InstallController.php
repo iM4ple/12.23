@@ -14,20 +14,12 @@ class InstallController
         // Users table
         App::$db->createTable('users');
         App::$db->insertRow('users', [
-            'name' => 'Antanas',
-            'surname' => 'A.',
-            'email' => 'antanas@post.lt',
-            'password' => 'antanas123',
+            'name' => 'Mindaugas',
+            'surname' => 'R.',
+            'email' => 'klevas@post.lt',
+            'password' => 'klevas123',
             'phone' => '+37062011122',
-            'address' => 'Gedimino g. 9, Vilnius',
-        ]);
-        App::$db->insertRow('users', [
-            'name' => 'Petras',
-            'surname' => 'P.',
-            'email' => 'petras@post.lt',
-            'password' => 'petras123',
-            'phone' => '+37062022332',
-            'address' => 'Antakalnio g. 1, Vilnius',
+            'address' => 'Antakalnio g. 22, Vilnius',
         ]);
 
         // Feedback (comments) table
@@ -35,15 +27,10 @@ class InstallController
         App::$db->insertRow('comments', [
             'user_id' => 0,
             'timestamp' => 1607641838,
-            'comment' => 'Ačiū. Labai patiko',
-        ]);
-        App::$db->insertRow('comments', [
-            'user_id' => 1,
-            'timestamp' => 1608641838,
-            'comment' => 'Užeisiu dar kartą. Sėkmės',
+            'comment' => 'Ačiū:) Labai rekomenduoju.',
         ]);
 
-        print 'Duomenu bazė paruošta!';
+        print 'Duomenų bazė išvalyta!';
     }
 }
 

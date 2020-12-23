@@ -19,10 +19,10 @@ class Navigation extends View
 
         if (App::$session->getUser()) {
             $name = App::$session->getUser()['name'];
-            $this->addLink("Log Out", App::$router::getUrl('logout'), 'right');
+            $this->addLink("Atsijungti", App::$router::getUrl('logout'), 'right');
         } else {
             $this->addLink('Registruotis', App::$router::getUrl('register'), 'right');
-            $this->addLink('Log In', App::$router::getUrl('login'), 'right');
+            $this->addLink('Prisijungti', App::$router::getUrl('login'), 'right');
         }
 
         return $this->data;

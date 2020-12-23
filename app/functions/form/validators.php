@@ -5,7 +5,7 @@ use App\App;
 function validate_user_unique(string $field_input, array &$field): bool
 {
     if (App::$db->getRowWhere('users', ['email' => $field_input])) {
-        $field['error'] = 'Toks e-mail jau yra.';
+        $field['error'] = 'Toks E-mail jau yra.';
 
         return false;
     }
@@ -30,7 +30,7 @@ function validate_login(array $filtered_input, array &$form): bool
 function validate_user_exists(string $field_input, array &$field): bool
 {
     if (!App::$db->getRowWhere('users', ['email' => $field_input])) {
-        $field['error'] = 'User with this email does not exist';
+        $field['error'] = 'Tokio vartotojo (E-mail) nėra';
 
         return false;
     }

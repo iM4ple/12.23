@@ -4,8 +4,6 @@ namespace App\Controllers\Common;
 
 use App\App;
 use App\Views\BasePage;
-use App\Views\Forms\Admin\Pizza\PizzaCreateForm;
-use App\Views\Forms\Admin\Pizza\PizzaUpdateForm;
 use Core\View;
 use Core\Views\Link;
 
@@ -37,7 +35,7 @@ class HomeController
             [
                 'image' => '/media/img/reabilitacija.jpg',
                 'title' => 'Teikiamos paslaugos',
-                'description' => 'Teikiame platų mediciniškai pagrįstų sportavimo paslaugų komplektą – nuo išsamios individualizuotų grupinių treniruočių iki mitybos konsultavimo, nuo medicininio ištyrimo iki sporto psichologų konsultacijų.'
+                'description' => 'Teikiame platų mediciniškai pagrįstų sportavimo paslaugų komplektą – nuo išsamios individualizuotų grupinių treniruočių iki mitybos konsultavimo.'
             ],
         ];
 

@@ -16,7 +16,7 @@ class FeedbackCreateForm extends Form
                     'validators' => [
                         'validate_field_not_empty',
                         'validate_length' => [
-                            'max' => 666,
+                            'max' => 400,
                         ],
                     ],
                 ],
@@ -26,7 +26,7 @@ class FeedbackCreateForm extends Form
 
         $this->data['attr']['id'] = 'comment-create-form';
         $this->data['buttons']['create'] = [
-            'title' => 'KOMENTUOKITE!',
+            'title' => 'Siųsti komentarą!',
         ];
     }
 }

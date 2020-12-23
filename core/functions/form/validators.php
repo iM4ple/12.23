@@ -8,7 +8,7 @@ function validate_fields_match($form_values, array &$form, array $params): bool
 {
     foreach ($params as $field_index) {
         if ($form_values[$params[0]] !== $form_values[$field_index]) {
-            $form['fields'][$field_index]['error'] = strtr('Nu nesutampa @field, nu', [
+            $form['fields'][$field_index]['error'] = strtr('Nesutampa @field', [
                 '@field' => $form['fields'][$params[0]]['label']
             ]);
 
